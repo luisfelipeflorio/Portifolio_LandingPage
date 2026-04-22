@@ -28,39 +28,39 @@
 
 ---
 
-### Sprint 2 — Models, Forms e Views
+### Sprint 2 — Models, Forms e Views [X]
 
 #### Tarefa 2.1 — Model `Lead`
-- [ ] 2.1.1 Criar model `Lead` em `landing/models.py` com campos: `name (CharField)`, `email (EmailField)`, `phone (CharField, blank=True)`, `created_at (auto_now_add)`, `updated_at (auto_now)`
-- [ ] 2.1.2 Gerar migration (`python manage.py makemigrations`)
-- [ ] 2.1.3 Aplicar migration (`python manage.py migrate`)
-- [ ] 2.1.4 Registrar `Lead` no `landing/admin.py` com `list_display = ['name', 'email', 'phone', 'created_at']`
+- [X] 2.1.1 Criar model `Lead` em `landing/models.py` com campos: `name (CharField)`, `email (EmailField)`, `phone (CharField, blank=True)`, `created_at (auto_now_add)`, `updated_at (auto_now)`
+- [X] 2.1.2 Gerar migration (`python manage.py makemigrations`)
+- [X] 2.1.3 Aplicar migration (`python manage.py migrate`)
+- [X] 2.1.4 Registrar `Lead` no `landing/admin.py` com `list_display = ['name', 'email', 'phone', 'created_at']`
 
 #### Tarefa 2.2 — Model `Testimonial`
-- [ ] 2.2.1 Criar model `Testimonial` com campos: `author_name`, `author_city`, `content (TextField)`, `rating (IntegerField, 1–5)`, `is_active (BooleanField)`, `created_at`, `updated_at`
-- [ ] 2.2.2 Gerar e aplicar migration
-- [ ] 2.2.3 Registrar `Testimonial` no `admin.py` com `list_display` e `list_filter` por `is_active`
-- [ ] 2.2.4 Criar 3 depoimentos fictícios via Django Admin para teste
+- [X] 2.2.1 Criar model `Testimonial` com campos: `author_name`, `author_city`, `content (TextField)`, `rating (IntegerField, 1–5)`, `is_active (BooleanField)`, `created_at`, `updated_at`
+- [X] 2.2.2 Gerar e aplicar migration
+- [X] 2.2.3 Registrar `Testimonial` no `admin.py` com `list_display` e `list_filter` por `is_active`
+- [X] 2.2.4 Criar 3 depoimentos fictícios via Django Admin para teste
 
 #### Tarefa 2.3 — Model `FAQ`
-- [ ] 2.3.1 Criar model `FAQ` com campos: `question (CharField)`, `answer (TextField)`, `order (IntegerField)`, `is_active (BooleanField)`, `created_at`, `updated_at`
-- [ ] 2.3.2 Adicionar `class Meta` com `ordering = ['order']`
-- [ ] 2.3.3 Gerar e aplicar migration
-- [ ] 2.3.4 Registrar `FAQ` no `admin.py`
-- [ ] 2.3.5 Criar 5 perguntas fictícias via Django Admin para teste
+- [X] 2.3.1 Criar model `FAQ` com campos: `question (CharField)`, `answer (TextField)`, `order (IntegerField)`, `is_active (BooleanField)`, `created_at`, `updated_at`
+- [X] 2.3.2 Adicionar `class Meta` com `ordering = ['order']`
+- [X] 2.3.3 Gerar e aplicar migration
+- [X] 2.3.4 Registrar `FAQ` no `admin.py`
+- [X] 2.3.5 Criar 5 perguntas fictícias via Django Admin para teste
 
 #### Tarefa 2.4 — Formulário de Lead
-- [ ] 2.4.1 Criar `landing/forms.py` com classe `LeadForm(forms.ModelForm)` baseada no model `Lead`
-- [ ] 2.4.2 Definir `fields = ['name', 'email', 'phone']` no `Meta` da `LeadForm`
-- [ ] 2.4.3 Adicionar `widgets` para cada campo com classes Tailwind CSS no `__init__` ou diretamente no `widgets` do `Meta`
-- [ ] 2.4.4 Adicionar validação customizada do e-mail para evitar duplicatas (método `clean_email`)
+- [X] 2.4.1 Criar `landing/forms.py` com classe `LeadForm(forms.ModelForm)` baseada no model `Lead`
+- [X] 2.4.2 Definir `fields = ['name', 'email', 'phone']` no `Meta` da `LeadForm`
+- [X] 2.4.3 Adicionar `widgets` para cada campo com classes Tailwind CSS no `__init__` ou diretamente no `widgets` do `Meta`
+- [X] 2.4.4 Adicionar validação customizada do e-mail para evitar duplicatas (método `clean_email`)
 
 #### Tarefa 2.5 — Views
-- [ ] 2.5.1 Criar `LandingPageView(TemplateView)` em `landing/views.py` que passa para o contexto: `testimonials` (ativos), `faqs` (ativos), `form` (instância de `LeadForm`)
-- [ ] 2.5.2 Criar `LeadCreateView(CreateView)` que processa o POST do formulário, salva o lead e redireciona para `thank_you`
-- [ ] 2.5.3 Definir `success_url` na `LeadCreateView` apontando para a URL `thank_you`
-- [ ] 2.5.4 Criar `ThankYouView(TemplateView)` para a página de confirmação
-- [ ] 2.5.5 Mapear as três views em `landing/urls.py`
+- [X] 2.5.1 Criar `LandingPageView(TemplateView)` em `landing/views.py` que passa para o contexto: `testimonials` (ativos), `faqs` (ativos), `form` (instância de `LeadForm`)
+- [X] 2.5.2 Criar `LeadCreateView(CreateView)` que processa o POST do formulário, salva o lead e redireciona para `thank_you`
+- [X] 2.5.3 Definir `success_url` na `LeadCreateView` apontando para a URL `thank_you`
+- [X] 2.5.4 Criar `ThankYouView(TemplateView)` para a página de confirmação
+- [X] 2.5.5 Mapear as três views em `landing/urls.py`
 
 ---
 
@@ -114,7 +114,7 @@
 - [ ] 3.6.5 Garantir que o conteúdo expandido tem padding e separador suave
 
 #### Tarefa 3.7 — Seção do Formulário de Lead
-- [ ] 3.7.1 Criar seção com gradiente dourado-para-escuro de fundo
+- [ ] 3.7.1 Criar seção with gradiente dourado-para-escuro de fundo
 - [ ] 3.7.2 Adicionar título de urgência/oferta acima do formulário
 - [ ] 3.7.3 Renderizar `{{ form.name }}`, `{{ form.email }}`, `{{ form.phone }}` com labels
 - [ ] 3.7.4 Renderizar erros do formulário com `{{ form.field.errors }}` em estilo vermelho inline
@@ -125,7 +125,7 @@
 #### Tarefa 3.8 — Seção de Oferta/Preço
 - [ ] 3.8.1 Criar seção com destaque para o preço e condições
 - [ ] 3.8.2 Adicionar preço riscado (de) e preço promocional (por) com tipografia grande
-- [ ] 3.8.3 Adicionar botão CTA de compra com link externo (configurável)
+- [ ] 3.8.3 Adicionar botão CTA de compra with link externo (configurável)
 - [ ] 3.8.4 Adicionar selos de garantia/confiança (pagamento seguro, entrega garantida)
 
 #### Tarefa 3.9 — Footer
