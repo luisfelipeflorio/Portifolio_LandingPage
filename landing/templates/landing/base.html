@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SlimChoco - O sabor do emagrecimento{% endblock %}</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom configurations for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'chocolate-dark': '#2C1A0E',
+                        'chocolate': '#4A2C17',
+                        'gold': '#C9A227',
+                        'gold-light': '#E8C84A',
+                        'sand': '#D2B48C',
+                        'cream': '#F5EDD6',
+                    }
+                }
+            }
+        }
+    </script>
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="font-sans antialiased text-[#1A1A1A] bg-cream">
+    
+    {% block content %}
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+</body>
+</html>

@@ -3,28 +3,28 @@
 #### Tarefa 1.1 — Configuração do Projeto Django
 - [X] 1.1.1 Criar ambiente virtual Python (`python -m venv venv`)
 - [X] 1.1.2 Instalar Django (`pip install django`)
-- [ ] 1.1.3 Criar projeto Django (`django-admin startproject slimchoco .`)
-- [ ] 1.1.4 Criar app `landing` (`python manage.py startapp landing`)
-- [ ] 1.1.5 Registrar app `landing` em `INSTALLED_APPS` no `settings.py`
-- [ ] 1.1.6 Configurar `LANGUAGE_CODE = 'pt-br'` e `TIME_ZONE = 'America/Sao_Paulo'` no `settings.py`
-- [ ] 1.1.7 Configurar diretório de templates em `settings.py` (`TEMPLATES[0]['DIRS']`)
-- [ ] 1.1.8 Configurar `STATICFILES_DIRS` e `STATIC_ROOT` no `settings.py`
-- [ ] 1.1.9 Gerar arquivo `requirements.txt`
+- [X] 1.1.3 Criar projeto Django (`django-admin startproject slimchoco .`)
+- [X] 1.1.4 Criar app `landing` (`python manage.py startapp landing`)
+- [X] 1.1.5 Registrar app `landing` em `INSTALLED_APPS` no `settings.py`
+- [X] 1.1.6 Configurar `LANGUAGE_CODE = 'pt-br'` e `TIME_ZONE = 'America/Sao_Paulo'` no `settings.py`
+- [X] 1.1.7 Configurar diretório de templates em `settings.py` (`TEMPLATES[0]['DIRS']`)
+- [X] 1.1.8 Configurar `STATICFILES_DIRS` e `STATIC_ROOT` no `settings.py`
+- [X] 1.1.9 Gerar arquivo `requirements.txt`
 
 #### Tarefa 1.2 — Estrutura de Arquivos e Templates Base
-- [ ] 1.2.1 Criar estrutura de pastas: `landing/templates/landing/`
-- [ ] 1.2.2 Criar `base.html` com blocos `{% block title %}`, `{% block content %}`, `{% block extra_js %}`
-- [ ] 1.2.3 Adicionar CDN do Tailwind CSS no `<head>` do `base.html`
-- [ ] 1.2.4 Adicionar meta tags de responsividade (`viewport`) no `base.html`
-- [ ] 1.2.5 Criar `index.html` extendendo `base.html`
-- [ ] 1.2.6 Criar `thank_you.html` extendendo `base.html`
-- [ ] 1.2.7 Copiar imagens do produto para `landing/static/landing/images/`
+- [X] 1.2.1 Criar estrutura de pastas: `landing/templates/landing/`
+- [X] 1.2.2 Criar `base.html` com blocos `{% block title %}`, `{% block content %}`, `{% block extra_js %}`
+- [X] 1.2.3 Adicionar CDN do Tailwind CSS no `<head>` do `base.html`
+- [X] 1.2.4 Adicionar meta tags de responsividade (`viewport`) no `base.html`
+- [X] 1.2.5 Criar `index.html` extendendo `base.html`
+- [X] 1.2.6 Criar `thank_you.html` extendendo `base.html`
+- [X] 1.2.7 Copiar imagens do produto para `landing/static/landing/images/`
 
 #### Tarefa 1.3 — Configuração de URLs
-- [ ] 1.3.1 Criar `landing/urls.py` com rota para a view da landing page (`/`)
-- [ ] 1.3.2 Criar rota para a página de agradecimento (`/obrigado/`)
-- [ ] 1.3.3 Incluir `landing.urls` no `slimchoco/urls.py` com `include()`
-- [ ] 1.3.4 Verificar que o servidor sobe sem erros (`python manage.py runserver`)
+- [X] 1.3.1 Criar `landing/urls.py` com rota para a view da landing page (`/`)
+- [X] 1.3.2 Criar rota para a página de agradecimento (`/obrigado/`)
+- [X] 1.3.3 Incluir `landing.urls` no `slimchoco/urls.py` com `include()`
+- [X] 1.3.4 Verificar que o servidor sobe sem erros (`python manage.py runserver`)
 
 ---
 

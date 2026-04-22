@@ -1,0 +1,18 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block title %}SlimChoco | Menos medidas. Mais autoestima.{% endblock %}
+
+{% block content %}
+<main class="min-h-screen flex flex-col items-center justify-center bg-chocolate-dark text-white p-10">
+    <h1 class="text-5xl font-bold text-gold mb-4">SlimChoco</h1>
+    <p class="text-xl italic mb-8">Sabor que dá prazer. Resultados que você vê!</p>
+    <div class="bg-white/10 p-8 rounded-2xl border border-gold/20 text-center">
+        <h2 class="text-2xl font-semibold mb-4">Página em Construção</h2>
+        <p class="mb-6 text-sand">Acompanhe as próximas sprints para ver a transformação.</p>
+        <a href="{% url 'thank_you' %}" class="bg-gold text-chocolate-dark font-bold py-3 px-8 rounded-full hover:bg-gold-light transition-all">
+            Simular Lead
+        </a>
+    </div>
+</main>
+{% endblock %}
