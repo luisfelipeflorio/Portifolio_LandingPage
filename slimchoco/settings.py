@@ -118,3 +118,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Landing page checkout URL — update for each campaign or product version
+CHECKOUT_URL = 'https://checkout.exemplo.com/slimchoco'

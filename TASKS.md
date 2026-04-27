@@ -100,45 +100,45 @@
 - [X] 3.4.6 Adicionar linha conectora entre os steps (visível apenas no desktop)
 
 #### Tarefa 3.5 — Seção de Depoimentos
-- [ ] 3.5.1 Criar seção com fundo creme/areia e título centralizado
-- [ ] 3.5.2 Iterar sobre `testimonials` do contexto com `{% for testimonial in testimonials %}`
-- [ ] 3.5.3 Renderizar cada card de depoimento com: nome, cidade, estrelas (rating) e texto
-- [ ] 3.5.4 Implementar estrelas com loop `{% for i in "12345" %}` condicionando cor pelo rating
-- [ ] 3.5.5 Aplicar grid 1 coluna no mobile, 3 colunas no desktop
+- [X] 3.5.1 Criar seção com fundo creme/areia e título centralizado
+- [X] 3.5.2 Iterar sobre `testimonials` do contexto com `{% for testimonial in testimonials %}`
+- [X] 3.5.3 Renderizar cada card de depoimento com: nome, cidade, estrelas (rating) e texto
+- [X] 3.5.4 Implementar estrelas com loop `{% for i in "12345" %}` condicionando cor pelo rating
+- [X] 3.5.5 Aplicar grid 1 coluna no mobile, 3 colunas no desktop
 
 #### Tarefa 3.6 — Seção FAQ
-- [ ] 3.6.1 Criar seção com fundo escuro e título centralizado
-- [ ] 3.6.2 Iterar sobre `faqs` do contexto com `{% for faq in faqs %}`
-- [ ] 3.6.3 Renderizar cada item do FAQ como acordeão com `<details>` e `<summary>` HTML nativo
-- [ ] 3.6.4 Estilizar `<summary>` com cursor pointer, ícone de seta e hover dourado
-- [ ] 3.6.5 Garantir que o conteúdo expandido tem padding e separador suave
+- [X] 3.6.1 Criar seção com fundo escuro e título centralizado
+- [X] 3.6.2 Iterar sobre `faqs` do contexto com `{% for faq in faqs %}`
+- [X] 3.6.3 Renderizar cada item do FAQ como acordeão com `<details>` e `<summary>` HTML nativo
+- [X] 3.6.4 Estilizar `<summary>` com cursor pointer, ícone de seta e hover dourado
+- [X] 3.6.5 Garantir que o conteúdo expandido tem padding e separador suave
 
 #### Tarefa 3.7 — Seção do Formulário de Lead
-- [ ] 3.7.1 Criar seção with gradiente dourado-para-escuro de fundo
-- [ ] 3.7.2 Adicionar título de urgência/oferta acima do formulário
-- [ ] 3.7.3 Renderizar `{{ form.name }}`, `{{ form.email }}`, `{{ form.phone }}` com labels
-- [ ] 3.7.4 Renderizar erros do formulário com `{{ form.field.errors }}` em estilo vermelho inline
-- [ ] 3.7.5 Adicionar token CSRF `{% csrf_token %}` no formulário
-- [ ] 3.7.6 Configurar `action` do form apontando para a URL da `LeadCreateView`
-- [ ] 3.7.7 Adicionar botão de envio com estilo dark e hover
+- [X] 3.7.1 Criar seção with gradiente dourado-para-escuro de fundo
+- [X] 3.7.2 Adicionar título de urgência/oferta acima do formulário
+- [X] 3.7.3 Renderizar `{{ form.name }}`, `{{ form.email }}`, `{{ form.phone }}` com labels
+- [X] 3.7.4 Renderizar erros do formulário com `{{ form.field.errors }}` em estilo vermelho inline
+- [X] 3.7.5 Adicionar token CSRF `{% csrf_token %}` no formulário
+- [X] 3.7.6 Configurar `action` do form apontando para a URL da `LeadCreateView`
+- [X] 3.7.7 Adicionar botão de envio com estilo dark e hover
 
 #### Tarefa 3.8 — Seção de Oferta/Preço
-- [ ] 3.8.1 Criar seção com destaque para o preço e condições
-- [ ] 3.8.2 Adicionar preço riscado (de) e preço promocional (por) com tipografia grande
-- [ ] 3.8.3 Adicionar botão CTA de compra with link externo (configurável)
-- [ ] 3.8.4 Adicionar selos de garantia/confiança (pagamento seguro, entrega garantida)
+- [X] 3.8.1 Criar seção com destaque para o preço e condições
+- [X] 3.8.2 Adicionar preço riscado (de) e preço promocional (por) com tipografia grande
+- [X] 3.8.3 Adicionar botão CTA de compra with link externo (configurável)
+- [X] 3.8.4 Adicionar selos de garantia/confiança (pagamento seguro, entrega garantida)
 
 #### Tarefa 3.9 — Footer
-- [ ] 3.9.1 Criar footer com fundo `#2C1A0E` e texto `#D2B48C`
-- [ ] 3.9.2 Adicionar copyright e nome do produto
-- [ ] 3.9.3 Adicionar texto de disclaimer ("Resultados podem variar. Consulte um médico...")
-- [ ] 3.9.4 Adicionar links básicos (Política de Privacidade placeholder)
+- [X] 3.9.1 Criar footer com fundo `#2C1A0E` e texto `#D2B48C`
+- [X] 3.9.2 Adicionar copyright e nome do produto
+- [X] 3.9.3 Adicionar texto de disclaimer ("Resultados podem variar. Consulte um médico...")
+- [X] 3.9.4 Adicionar links básicos (Política de Privacidade placeholder)
 
 #### Tarefa 3.10 — Página de Agradecimento
-- [ ] 3.10.1 Criar `thank_you.html` com mensagem de confirmação de lead registrado
-- [ ] 3.10.2 Adicionar ícone de check e headline de agradecimento em dourado
-- [ ] 3.10.3 Adicionar botão de voltar para a página inicial
-- [ ] 3.10.4 Manter estilo visual consistente com a landing page
+- [X] 3.10.1 Criar `thank_you.html` com mensagem de confirmação de lead registrado
+- [X] 3.10.2 Adicionar ícone de check e headline de agradecimento em dourado
+- [X] 3.10.3 Adicionar botão de voltar para a página inicial
+- [X] 3.10.4 Manter estilo visual consistente com a landing page
 
 ---
 

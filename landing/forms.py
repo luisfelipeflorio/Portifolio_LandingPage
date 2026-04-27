@@ -8,15 +8,15 @@ class LeadForm(forms.ModelForm):
         widgets = {
             'name': forms.TextInput(attrs={
                 'placeholder': 'Seu nome completo',
-                'class': 'w-full bg-white/10 border border-[#C9A227]/40 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
+                'class': 'w-full bg-white border border-[#C9A227]/40 rounded-lg px-4 py-3 text-[#2C1A0E] placeholder-[#4A2C17]/40 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
             }),
             'email': forms.EmailInput(attrs={
                 'placeholder': 'Seu melhor e-mail',
-                'class': 'w-full bg-white/10 border border-[#C9A227]/40 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
+                'class': 'w-full bg-white border border-[#C9A227]/40 rounded-lg px-4 py-3 text-[#2C1A0E] placeholder-[#4A2C17]/40 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
             }),
             'phone': forms.TextInput(attrs={
                 'placeholder': 'Seu telefone (opcional)',
-                'class': 'w-full bg-white/10 border border-[#C9A227]/40 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
+                'class': 'w-full bg-white border border-[#C9A227]/40 rounded-lg px-4 py-3 text-[#2C1A0E] placeholder-[#4A2C17]/40 focus:outline-none focus:border-[#C9A227] focus:ring-1 focus:ring-[#C9A227] transition-all duration-200'
             }),
         }
 

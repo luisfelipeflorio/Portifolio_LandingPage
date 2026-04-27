@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.urls import reverse_lazy
 from django.views.generic import TemplateView, CreateView
 from .models import Testimonial, FAQ, Lead
@@ -11,6 +12,7 @@ class LandingPageView(TemplateView):
         context['testimonials'] = Testimonial.objects.filter(is_active=True)
         context['faqs'] = FAQ.objects.filter(is_active=True)
         context['form'] = LeadForm()
+        context['checkout_url'] = settings.CHECKOUT_URL
         return context
 
 class LeadCreateView(CreateView):
@@ -23,6 +25,7 @@ class LeadCreateView(CreateView):
         context = super().get_context_data(**kwargs)
         context['testimonials'] = Testimonial.objects.filter(is_active=True)
         context['faqs'] = FAQ.objects.filter(is_active=True)
+        context['checkout_url'] = settings.CHECKOUT_URL
         return context
 
 class ThankYouView(TemplateView):
