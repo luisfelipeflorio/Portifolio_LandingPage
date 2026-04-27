@@ -4,15 +4,331 @@
 {% block title %}SlimChoco | Menos medidas. Mais autoestima.{% endblock %}
 
 {% block content %}
-<main class="min-h-screen flex flex-col items-center justify-center bg-chocolate-dark text-white p-10">
-    <h1 class="text-5xl font-bold text-gold mb-4">SlimChoco</h1>
-    <p class="text-xl italic mb-8">Sabor que dá prazer. Resultados que você vê!</p>
-    <div class="bg-white/10 p-8 rounded-2xl border border-gold/20 text-center">
-        <h2 class="text-2xl font-semibold mb-4">Página em Construção</h2>
-        <p class="mb-6 text-sand">Acompanhe as próximas sprints para ver a transformação.</p>
-        <a href="{% url 'thank_you' %}" class="bg-gold text-chocolate-dark font-bold py-3 px-8 rounded-full hover:bg-gold-light transition-all">
-            Simular Lead
-        </a>
-    </div>
+<main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-[#2C1A0E] via-[#4A2C17] to-[#2C1A0E] py-16 md:py-24 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Text Content -->
+                <div class="flex-1 text-center md:text-left">
+                    <span class="inline-block bg-[#C9A227] text-[#2C1A0E] text-xs font-bold px-3 py-1 rounded-full mb-6 uppercase tracking-widest">
+                        NOVO!
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        Menos medidas.<br>
+                        <span class="text-[#C9A227]">Mais autoestima.</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-[#D2B48C] italic font-semibold mb-8">
+                        Sabor que dá prazer. Resultados que você vê!
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-10">
+                        <a href="#lead-form" class="bg-gradient-to-r from-[#C9A227] to-[#E8C84A] text-[#2C1A0E] font-bold py-4 px-8 rounded-full text-lg uppercase tracking-wider hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                            Quero meu SlimChoco
+                        </a>
+                    </div>
+
+                    <!-- Checkmarks -->
+                    <ul class="space-y-3 text-white/90">
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <svg class="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Para todas as dietas</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <svg class="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Prático e delicioso</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <svg class="w-5 h-5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Resultados de verdade</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product Image -->
+                <div class="flex-1 relative">
+                    <div class="absolute inset-0 bg-[#C9A227]/20 blur-3xl rounded-full transform scale-75"></div>
+                    <img src="{% static 'landing/images/ChatGPT Image 22 de abr. de 2026, 14_29_50.png' %}" 
+                         alt="SlimChoco Produto" 
+                         class="relative z-10 w-full max-w-md mx-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section class="py-16 md:py-24 bg-[#F5EDD6]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#2C1A0E] mb-4">Por que escolher o SlimChoco?</h2>
+                <div class="w-20 h-1 bg-[#C9A227] mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#C9A227]/10 hover:border-[#C9A227]/40 hover:shadow-md transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 bg-[#F5EDD6] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C9A227]/10 transition-colors">
+                        <svg class="w-8 h-8 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.99 7.99 0 0121 13a8.14 8.14 0 01-.112 1.343m-4.743-4.743A4 4 0 0013 13.5l3.5 1.5l1.5-3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C1A0E] mb-3">Acelera o Metabolismo</h3>
+                    <p class="text-[#4A2C17]/80">Ingredientes ativos que estimulam a queima calórica natural do seu corpo.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#C9A227]/10 hover:border-[#C9A227]/40 hover:shadow-md transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 bg-[#F5EDD6] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C9A227]/10 transition-colors">
+                        <svg class="w-8 h-8 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C1A0E] mb-3">Controle do Apetite</h3>
+                    <p class="text-[#4A2C17]/80">Aumenta a saciedade e reduz a vontade de doces entre as refeições.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#C9A227]/10 hover:border-[#C9A227]/40 hover:shadow-md transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 bg-[#F5EDD6] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C9A227]/10 transition-colors">
+                        <svg class="w-8 h-8 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C1A0E] mb-3">Saúde Intestinal</h3>
+                    <p class="text-[#4A2C17]/80">Fibras naturais que auxiliam no bom funcionamento do sistema digestivo.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#C9A227]/10 hover:border-[#C9A227]/40 hover:shadow-md transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 bg-[#F5EDD6] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C9A227]/10 transition-colors">
+                        <svg class="w-8 h-8 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#2C1A0E] mb-3">Sem Açúcar</h3>
+                    <p class="text-[#4A2C17]/80">Adoçado naturalmente, ideal para manter o foco na dieta sem abrir mão do prazer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="py-16 md:py-24 bg-[#2C1A0E] text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Como o SlimChoco funciona?</h2>
+                <div class="w-20 h-1 bg-[#C9A227] mx-auto"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row justify-between gap-12">
+                <!-- Line connector (desktop only) -->
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-[#C9A227]/20 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div class="w-24 h-24 bg-[#C9A227] text-[#2C1A0E] rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold border-4 border-[#2C1A0E] shadow-xl">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#C9A227]">Consuma 1 tablete ao dia</h3>
+                    <p class="text-white/70">Escolha o melhor momento do seu dia para saborear o seu momento SlimChoco.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div class="w-24 h-24 bg-[#C9A227] text-[#2C1A0E] rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold border-4 border-[#2C1A0E] shadow-xl">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#C9A227]">Ativação Metabólica</h3>
+                    <p class="text-white/70">Os ingredientes agem no seu metabolismo, transformando gordura em energia.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div class="w-24 h-24 bg-[#C9A227] text-[#2C1A0E] rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold border-4 border-[#2C1A0E] shadow-xl">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[#C9A227]">Resultados em Semanas</h3>
+                    <p class="text-white/70">Sinta a leveza e veja as medidas diminuírem de forma saudável e saborosa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="py-16 md:py-24 bg-[#F5EDD6]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#2C1A0E] mb-4">O que dizem nossas clientes?</h2>
+                <div class="w-20 h-1 bg-[#C9A227] mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {% for testimonial in testimonials %}
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#C9A227]/10 flex flex-col h-full hover:shadow-md transition-shadow">
+                    <div class="flex gap-1 mb-4">
+                        {% for i in "12345" %}
+                        <span class="{% if forloop.counter <= testimonial.rating %}text-[#C9A227]{% else %}text-gray-300{% endif %} text-xl">★</span>
+                        {% endfor %}
+                    </div>
+                    <p class="text-[#4A2C17]/90 italic mb-6 flex-grow">"{{ testimonial.content }}"</p>
+                    <div>
+                        <p class="font-bold text-[#2C1A0E]">{{ testimonial.author_name }}</p>
+                        <p class="text-sm text-[#4A2C17]/60">{{ testimonial.author_city }}</p>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-span-full text-center py-10">
+                    <p class="text-[#4A2C17]/60 italic">Nenhum depoimento disponível no momento.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-[#2C1A0E] text-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Dúvidas Frequentes</h2>
+                <div class="w-20 h-1 bg-[#C9A227] mx-auto"></div>
+            </div>
+
+            <div class="space-y-4">
+                {% for faq in faqs %}
+                <details class="group bg-white/5 border border-[#C9A227]/20 rounded-xl overflow-hidden transition-all duration-300">
+                    <summary class="flex justify-between items-center cursor-pointer p-6 font-semibold list-none hover:text-[#C9A227] transition-colors">
+                        <span>{{ faq.question }}</span>
+                        <svg class="w-5 h-5 text-[#C9A227] transform group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-white/70 leading-relaxed border-t border-[#C9A227]/10 pt-4">
+                        {{ faq.answer|linebreaks }}
+                    </div>
+                </details>
+                {% empty %}
+                <p class="text-center text-white/60">Em breve adicionaremos mais informações.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta e Preço Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-[#F5EDD6] to-[#D2B48C]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border-4 border-[#C9A227]/30">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#2C1A0E] mb-2">Oferta Especial de Lançamento</h2>
+                <p class="text-[#4A2C17]/70 mb-8 uppercase tracking-widest font-bold text-sm">Aproveite enquanto durar o estoque</p>
+                
+                <div class="flex flex-col items-center mb-10">
+                    <span class="text-[#4A2C17]/50 line-through text-2xl mb-1">De R$ 197,00</span>
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-[#2C1A0E] text-lg font-bold">Por apenas</span>
+                        <span class="text-5xl md:text-7xl font-extrabold text-[#C9A227]">R$ 97,00</span>
+                    </div>
+                    <span class="text-[#2C1A0E] font-bold mt-2">ou 12x de R$ 9,70</span>
+                </div>
+
+                <div class="flex flex-col gap-4 max-w-sm mx-auto">
+                    <a href="https://checkout.exemplo.com/slimchoco" class="bg-gradient-to-r from-[#C9A227] to-[#E8C84A] text-[#2C1A0E] font-bold py-5 px-10 rounded-full text-xl uppercase tracking-wider hover:shadow-2xl hover:scale-105 transition-all duration-300 text-center">
+                        Comprar Agora
+                    </a>
+                    <p class="text-xs text-[#4A2C17]/60 mt-2 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        Pagamento 100% seguro | Garantia de 30 dias
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section id="lead-form" class="py-16 md:py-24 bg-gradient-to-br from-[#4A2C17] to-[#2C1A0E] text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-1 text-center lg:text-left">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Quer receber dicas exclusivas e descontos?</h2>
+                    <p class="text-xl text-[#D2B48C] mb-8">Entre para nossa lista VIP e seja a primeira a saber de novas promoções e lançamentos do SlimChoco.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-12">
+                        <div class="text-center p-4 bg-white/5 rounded-2xl border border-white/10">
+                            <span class="block text-3xl font-bold text-[#C9A227] mb-1">5000+</span>
+                            <span class="text-sm text-white/60">Clientes Satisfeitas</span>
+                        </div>
+                        <div class="text-center p-4 bg-white/5 rounded-2xl border border-white/10">
+                            <span class="block text-3xl font-bold text-[#C9A227] mb-1">100%</span>
+                            <span class="text-sm text-white/60">Natural e Seguro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 w-full max-w-md">
+                    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-[#2C1A0E] mb-6 text-center">Cadastre-se na Lista VIP</h3>
+                        
+                        <form action="{% url 'lead_create' %}" method="post" class="space-y-4">
+                            {% csrf_token %}
+                            
+                            {% for field in form %}
+                            <div>
+                                <label for="{{ field.id_for_label }}" class="block text-[#4A2C17] text-sm font-semibold mb-1">
+                                    {{ field.label }}
+                                </label>
+                                {{ field }}
+                                {% if field.errors %}
+                                <div class="mt-1 text-red-500 text-xs font-medium">
+                                    {{ field.errors }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+
+                            <button type="submit" class="w-full bg-[#2C1A0E] text-white font-bold py-4 px-8 rounded-xl text-lg uppercase tracking-wider hover:bg-[#4A2C17] transition-all duration-300 shadow-lg mt-4">
+                                Quero Participar
+                            </button>
+                            
+                            <p class="text-[10px] text-[#4A2C17]/50 text-center mt-4">
+                                Prometemos não enviar spam. Seus dados estão protegidos.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C1A0E] py-12 border-t border-[#C9A227]/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <a href="/" class="text-3xl font-bold tracking-tight">
+                    <span class="text-[#C9A227]">Slim</span><span class="text-white">Choco</span>
+                </a>
+                
+                <div class="flex gap-8 text-[#D2B48C] font-medium">
+                    <a href="#" class="hover:text-[#C9A227] transition-colors">Termos de Uso</a>
+                    <a href="#" class="hover:text-[#C9A227] transition-colors">Privacidade</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/5 pt-8 text-center">
+                <p class="text-[#D2B48C]/60 text-sm mb-6 max-w-3xl mx-auto">
+                    Aviso Legal: Os resultados podem variar de pessoa para pessoa. As informações fornecidas neste site não substituem o aconselhamento médico profissional. Consulte sempre seu médico antes de iniciar qualquer dieta ou suplementação.
+                </p>
+                <p class="text-[#C9A227] font-semibold">
+                    &copy; 2026 SlimChoco. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
 </main>
 {% endblock %}

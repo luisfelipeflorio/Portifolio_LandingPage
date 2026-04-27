@@ -26,8 +26,28 @@
     </script>
     {% block extra_head %}{% endblock %}
 </head>
-<body class="font-sans antialiased text-[#1A1A1A] bg-cream">
+<body class="font-sans antialiased text-[#1A1A1A] bg-[#F5EDD6]">
     
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-[#2C1A0E]/95 backdrop-blur-sm z-50 border-b border-[#C9A227]/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold tracking-tight">
+                <span class="text-[#C9A227]">Slim</span><span class="text-white">Choco</span>
+            </a>
+            
+            <!-- CTA Desktop -->
+            <div class="hidden md:block">
+                <a href="#lead-form" class="bg-gradient-to-r from-[#C9A227] to-[#E8C84A] text-[#2C1A0E] font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wider hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Quero agora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed navbar -->
+    <div class="h-16 md:h-20"></div>
+
     {% block content %}
     {% endblock %}
 

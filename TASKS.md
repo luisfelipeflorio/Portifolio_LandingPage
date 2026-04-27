@@ -67,37 +67,37 @@
 ### Sprint 3 — Desenvolvimento do Template (Seções da Página)
 
 #### Tarefa 3.1 — Navbar
-- [ ] 3.1.1 Implementar navbar fixa no topo com logo "SlimChoco" em texto dourado
-- [ ] 3.1.2 Adicionar botão CTA na navbar ("Quero agora") visível apenas em desktop
-- [ ] 3.1.3 Aplicar efeito `backdrop-blur` e fundo semi-transparente na navbar
-- [ ] 3.1.4 Garantir que o navbar tem z-index alto o suficiente para ficar acima de todos os elementos
+- [X] 3.1.1 Implementar navbar fixa no topo com logo "SlimChoco" em texto dourado
+- [X] 3.1.2 Adicionar botão CTA na navbar ("Quero agora") visível apenas em desktop
+- [X] 3.1.3 Aplicar efeito `backdrop-blur` e fundo semi-transparente na navbar
+- [X] 3.1.4 Garantir que o navbar tem z-index alto o suficiente para ficar acima de todos os elementos
 
 #### Tarefa 3.2 — Hero Section
-- [ ] 3.2.1 Criar seção hero com gradiente de fundo escuro (`from-[#2C1A0E] via-[#4A2C17] to-[#2C1A0E]`)
-- [ ] 3.2.2 Adicionar badge "NOVO!" com estilo dourado no topo da seção
-- [ ] 3.2.3 Implementar headline principal ("Menos medidas. Mais autoestima.") em tipografia grande e bold
-- [ ] 3.2.4 Adicionar subheadline com slogan em itálico dourado
-- [ ] 3.2.5 Inserir imagem do produto com `{% static %}` e estilo responsivo
-- [ ] 3.2.6 Adicionar botão CTA primário com gradiente dourado e efeito hover
-- [ ] 3.2.7 Incluir lista de checkmarks ("Para todas as dietas", "Prático e delicioso", "Resultados de verdade")
-- [ ] 3.2.8 Garantir layout responsivo: empilhado no mobile, lado a lado no desktop (`md:flex-row`)
+- [X] 3.2.1 Criar seção hero com gradiente de fundo escuro (`from-[#2C1A0E] via-[#4A2C17] to-[#2C1A0E]`)
+- [X] 3.2.2 Adicionar badge "NOVO!" com estilo dourado no topo da seção
+- [X] 3.2.3 Implementar headline principal ("Menos medidas. Mais autoestima.") em tipografia grande e bold
+- [X] 3.2.4 Adicionar subheadline com slogan em itálico dourado
+- [X] 3.2.5 Inserir imagem do produto com `{% static %}` e estilo responsivo
+- [X] 3.2.6 Adicionar botão CTA primário com gradiente dourado e efeito hover
+- [X] 3.2.7 Incluir lista de checkmarks ("Para todas as dietas", "Prático e delicioso", "Resultados de verdade")
+- [X] 3.2.8 Garantir layout responsivo: empilhado no mobile, lado a lado no desktop (`md:flex-row`)
 
 #### Tarefa 3.3 — Seção de Benefícios
-- [ ] 3.3.1 Criar grid de 4 cards de benefício (2×2 mobile, 4×1 desktop)
-- [ ] 3.3.2 Implementar card "Acelera o Metabolismo" com ícone de chama e descrição
-- [ ] 3.3.3 Implementar card "Controle do Apetite" com ícone de folha e descrição
-- [ ] 3.3.4 Implementar card "Saúde Intestinal" com ícone de intestino e descrição
-- [ ] 3.3.5 Implementar card "Sem Açúcar" com ícone de açúcar cortado e descrição
-- [ ] 3.3.6 Adicionar borda e hover suave dourado nos cards
-- [ ] 3.3.7 Aplicar fundo alternado bege/creme na seção para contraste com o hero
+- [X] 3.3.1 Criar grid de 4 cards de benefício (2×2 mobile, 4×1 desktop)
+- [X] 3.3.2 Implementar card "Acelera o Metabolismo" com ícone de chama e descrição
+- [X] 3.3.3 Implementar card "Controle do Apetite" com ícone de folha e descrição
+- [X] 3.3.4 Implementar card "Saúde Intestinal" com ícone de intestino e descrição
+- [X] 3.3.5 Implementar card "Sem Açúcar" com ícone de açúcar cortado e descrição
+- [X] 3.3.6 Adicionar borda e hover suave dourado nos cards
+- [X] 3.3.7 Aplicar fundo alternado bege/creme na seção para contraste com o hero
 
 #### Tarefa 3.4 — Seção "Como Funciona"
-- [ ] 3.4.1 Criar seção com fundo escuro e título centralizado
-- [ ] 3.4.2 Implementar timeline ou steps horizontais com 3 passos numerados
-- [ ] 3.4.3 Passo 1: "Consuma 1 tablete ao dia" com ícone e descrição
-- [ ] 3.4.4 Passo 2: "Os ingredientes agem no seu metabolismo" com ícone e descrição
-- [ ] 3.4.5 Passo 3: "Veja os resultados em semanas" com ícone e descrição
-- [ ] 3.4.6 Adicionar linha conectora entre os steps (visível apenas no desktop)
+- [X] 3.4.1 Criar seção com fundo escuro e título centralizado
+- [X] 3.4.2 Implementar timeline ou steps horizontais com 3 passos numerados
+- [X] 3.4.3 Passo 1: "Consuma 1 tablete ao dia" com ícone e descrição
+- [X] 3.4.4 Passo 2: "Os ingredientes agem no seu metabolismo" com ícone e descrição
+- [X] 3.4.5 Passo 3: "Veja os resultados em semanas" com ícone e descrição
+- [X] 3.4.6 Adicionar linha conectora entre os steps (visível apenas no desktop)
 
 #### Tarefa 3.5 — Seção de Depoimentos
 - [ ] 3.5.1 Criar seção com fundo creme/areia e título centralizado
